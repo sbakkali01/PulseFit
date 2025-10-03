@@ -45,18 +45,22 @@ The tech stack used here is :
   then added in the main database.
 - Ability to see the stats of your collegues that use the app ( you can subscribe to their account ). Possibility to 
   see their workouts ( if they are flagged as public ).
+- A stats dashboard where you can see a graph with metrics across time for each exercise ( the metric can be weight ,
+  reps , both , ... ) e.g. : the amount of kilos you can bench press (on the Y axis) the time (on the X axis) in 
+  days (each day corresponding to a workout day of course not all days)
 
 
 ## Routes
 
 This section details what each route primarily does , and the features it will include.
 
-| Route            | Current usage                                                                        | Future features                              |
-|------------------|--------------------------------------------------------------------------------------|----------------------------------------------|
-| /                | Entry point of the application : a greating                                          | A login / signup page                        |
-| /exercises       | List of all exercises                                                                | Ability to filter exercises by targeted body parts , a search bar with name |
-| /create-exercise | A page to create an exercise                                                         |                                              |
-| /workouts        | List of all the current workouts                                                     | A nice way to modify the workout ( rearrage exercises and pauses order , add new exercise |
-| /create-workout  | A page to add a workout                                                              |                                              |
-| /in-progress     | Page of the current workout : a workout that has been selected on the / workout page | A more interactive page , no reordering of the workout can be done here |
+| Route               | Current usage                                                                        | Future features                              |
+|---------------------|--------------------------------------------------------------------------------------|----------------------------------------------|
+| /                   | Entry point of the application : a greating                                          | A login / signup page                        |
+| /exercises          | List of all exercises                                                                | Ability to filter exercises by targeted body parts , a search bar with name |
+| /create-exercise    | A page to create an exercise                                                         |                                              |
+| /workouts           | List of all the current workouts                                                     | A nice way to modify the workout ( rearrage exercises and pauses order , add new exercise |
+| /create-workout     | A page to add a workout                                                              |                                              |
+| /in-progress        | Page of the current workout : a workout that has been selected on the / workout page | A more interactive page , no reordering of the workout can be done here |
+| /stats/{workout_id} | Get the stats for each workout                                                       |                                                                         |
 
