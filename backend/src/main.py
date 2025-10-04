@@ -2,6 +2,8 @@ from typing import Union
 
 from fastapi import FastAPI
 
+from .exercise import exercises
+
 app = FastAPI()
 
 
@@ -11,7 +13,7 @@ def read_root():
 
 @app.get("/exercises")
 def get_all_exercises():
-    exercises
+    return exercises
 
 
 @app.get("/items/{item_id}")
